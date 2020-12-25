@@ -11,12 +11,28 @@ public class UltraEmojiCombat {
         l[3] = new Lutador("Dead Code", "Austrália", 28, 1.93f, 81.6f, 13, 0, 2);
         l[4] = new Lutador("Ufocobol", "Brasil", 37, 1.70f, 119.3f, 5, 4, 3);
         l[5] = new Lutador("Nerdaart", "EUA", 30, 1.81f, 105.7f, 12, 2, 4);
+//
+//        l[2].apresentar();
+//        l[3].status();
+//        l[3].getCategoria();
+//        l[3].ganharLuta();
 
-        l[2].apresentar();
-        l[3].status();
-        l[3].getCategoria();
-        l[3].ganharLuta();
+//Testando luta normal
+//Luta UEC01  = new Luta();
+//UEC01.marcarLuta(l[0], l[1]);
+//UEC01.lutar();
+//l[0].status();
+//l[1].status();
 
+//testando restrição de não poder lutar contra si mesmo
+//Luta UEC01 = new Luta();
+//UEC01.marcarLuta(l[1], l[1]);
+//UEC01.lutar();
+
+//testando se lutadores de diferentes categorias podem lutar
+Luta UEC01 = new Luta();
+UEC01.marcarLuta(l[1], l[5]);
+UEC01.lutar();
     }
 
 }
