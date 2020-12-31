@@ -1,11 +1,5 @@
 /*Exemplo cap.6 pg.11*/
 
-class Box {
-double width;
-double height;
-double depth;
-}
-
 class BoxDemo{
 public static void main(String args[]){
 
