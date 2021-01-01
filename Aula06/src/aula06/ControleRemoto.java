@@ -1,6 +1,6 @@
 package aula06;
 
-public class ControleRemoto implements Controlador{
+public class ControleRemoto implements Controlador {
 
     //Atributos
     private int volume;
@@ -53,7 +53,7 @@ public class ControleRemoto implements Controlador{
         System.out.println("Está ligado? " + this.getLigado());
         System.out.println("Está tocando? " + this.getTocando());
         System.out.print("Volume: " + this.getVolume());
-        for(int i = 0; i <= this.getVolume(); i += 10){
+        for (int i = 0; i <= this.getVolume(); i += 10) {
             System.out.print("/");
         }
     }
@@ -65,8 +65,8 @@ public class ControleRemoto implements Controlador{
 
     @Override
     public void maisVolume() {
-        if (this.getLigado()){
-            this.setVolume(this.getVolume()+5);
+        if (this.getLigado()) {
+            this.setVolume(this.getVolume() + 5);
         } else {
             System.out.println("Impossível aumentar volume.");
         }
@@ -74,36 +74,36 @@ public class ControleRemoto implements Controlador{
 
     @Override
     public void menosVolume() {
-        if (this.getLigado()){
-            this.setVolume(this.getVolume() -5);
-            
+        if (this.getLigado()) {
+            this.setVolume(this.getVolume() - 5);
+
         }
     }
 
     @Override
     public void ligarMudo() {
-        if(this.getLigado() && this.getVolume() > 0){
+        if (this.getLigado() && this.getVolume() > 0) {
             this.setVolume(0);
         }
     }
 
     @Override
     public void desligarMudo() {
-        if(this.getLigado() && this.getVolume() == 0){
+        if (this.getLigado() && this.getVolume() == 0) {
             this.setVolume(50);
         }
     }
 
     @Override
     public void play() {
-        if(this.getLigado() && ! (this.getTocando())){
+        if (this.getLigado() && !(this.getTocando())) {
             this.setTocando(true);
         }
     }
 
     @Override
     public void pause() {
-        if (this.getLigado() && this.getTocando()){
+        if (this.getLigado() && this.getTocando()) {
             this.setTocando(false);
         }
     }
