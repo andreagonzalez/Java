@@ -1,5 +1,5 @@
 package projetopessoas;
-
+//HERANÇA PARA DIFERENÇA
 public class Aluno extends Pessoa { //extends = herança Pessoa
     //Atributos
     private int matricula;
@@ -8,6 +8,10 @@ public class Aluno extends Pessoa { //extends = herança Pessoa
     //Métodos Públicos
     public void cancelarMatricula(){
         System.out.println("Matrícula será cancelada.");
+    }
+    public void pagarMensalidade(){
+        
+        
     }
     
     //Métodos Especiais
